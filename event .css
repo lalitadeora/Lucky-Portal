@@ -1,4 +1,4 @@
-body{
+/* body{
     margin: 0px;
     padding: 0px;
     background-color: aliceblue;
@@ -41,4 +41,110 @@ body{
     border-radius: 30px;
     margin-right: 20px;
  
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ✅ card hamesha center */
+}
+
+.main {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    padding: 15px;
+    width: 95%;
+    max-width: 500px;
+}
+
+.sub-main {
+    border: solid rgb(255, 145, 0) 2px;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: rgb(71, 4, 179);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ✅ vertically align text + image */
+    gap: 15px;
+    flex-wrap: nowrap;   /* ✅ image kabhi niche nahi jayegi */
+}
+
+.left-con {
+    flex: 1;
+}
+
+.left-con h4 {
+    margin: 6px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.right-con img {
+    border-radius: 15px;
+    max-width: 140px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ✅ Mobile Responsive (shrink font + image but same layout) */
+@media (max-width: 500px) {
+    header h2 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .left-con h4 {
+        font-size: 13px;
+    }
+
+    .right-con img {
+        max-width: 100px;
+    }
 }
