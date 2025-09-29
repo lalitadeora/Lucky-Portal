@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+.main{
+    margin-top: 50px;
+   margin-left: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 600px;
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+}
+.sub-main{
+    margin: 10px;
+    border: solid rgb(255, 145, 0) 2px;
+     height: 530px;
+    width: 400px;
+    border-radius: 10px;
+}
+.logo{
+    display: flex;          
+  flex-wrap: wrap;        
+         
+  justify-content: center; 
+  align-items: center; 
+      
+}
+.left-con{
+    float: left;
+}
+.right-con{
+    float: right;
+      margin-top: -200px;
+}
+.right-con img{
+    border-radius: 30px;
+    margin-right: 20px;
+ 
+}

@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+padding: 0;
+}
+.main{
+    background-color: white;
+}
+.round{
+    margin: 70px 280px;
+    background-color: rgb(255, 174, 0);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    
+    align-items: center;
+    width: 150px;
+    border-radius: 90%;
+}
+.pass{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(71, 4, 179);
+    border-radius: 20px 20px ;
+    text-decoration: none;
+}
+p{
+  margin-top: -50px ;
+   padding: 10px  310px;
+   font-weight: 200;
+}
