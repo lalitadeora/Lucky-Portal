@@ -44,45 +44,79 @@
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="event.css">
-    <title>Event Pass</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Pass</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #fff;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row; /* side by side */
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #333;
+      padding: 20px;
+      max-width: 900px;
+      gap: 20px;
+    }
+
+    .card img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .details h2 {
+      margin-top: 0;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column; /* mobile pe neeche chala jaye */
+        text-align: center;
+      }
+
+      .card img {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="main">
-        <div class="sub-main">
-            <header>
-                <div class="logo">
-                    <img src="https://luckyinstitute.org/img/logo/logo2.png" alt="logo" width="80%">
-                </div>
-                <p>
-                    Kamla Nehru Nagar, First Extension, Jodhpur (Raj.)<br>
-                    +91-97842-11113 | +91-0291-2750260<br>
-                    website: luckyinstitute.org
-                </p>
-                <h2>Garba Beats 2025</h2>
-            </header>
+  <div class="card">
+    <!-- Student Image -->
+    <img src="your-image.jpg" alt="Student Photo">
 
-            <div class="container">
-                <div class="left-con">
-                    <h4>Admin No : MCA/24/3021</h4>
-                    <h4>Event Date : 29-09-2025</h4>
-                    <h4>Name : Riya Vharma</h4>
-                    <h4>F/Name : Ram Vharma</h4>
-                    <h4>Class : MCA II YEAR (2025-26)</h4>
-                </div>
-                <div class="right-con">
-                    <img src="https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="profile img">
-                </div>
-            </div>
-        </div>
+    <!-- Student Details -->
+    <div class="details">
+      <h2>Garba Beats 2025</h2>
+      <p><b>Admin No:</b> MCA/24/3021</p>
+      <p><b>Event Date:</b> 29-09-2025</p>
+      <p><b>Name:</b> Riya Vharma</p>
+      <p><b>F/Name:</b> Ram Vharma</p>
+      <p><b>Class:</b> MCA II YEAR (2025-26)</p>
     </div>
+  </div>
 </body>
 </html>
+
+
+
